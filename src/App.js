@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './App.css';
+import { Switch, Route } from "react-router-dom";
+import Authenticate from "./Authenticate"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+          <Route path="/authenticate">
+            <Authenticate/>
+          </Route>
+          <Route path="/sign-up"></Route>
+          <Route exact path="/home"></Route>
+          <Route path="/create-pin"></Route>
+          <Route path="/balance"></Route>
+          <Route path="/"></Route>
+          <Route path="/"></Route>
+          <Route path="/"></Route>
+          <Route path="/"></Route>
+          <Route path="/"></Route>
+          <Route path="/"></Route>
+      </Switch>
     </div>
   );
 }
