@@ -1,11 +1,35 @@
+body {
+  background: #F8F8F8;
+  margin: 0;
+  padding: 0 20px;
+}
+
+h3 {
+  font-family: roboto;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+h4 {
+  font-family: roboto;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 0;
+}
+
 .carousel .slide p {
   background: none;
   color: black;
-  font-family: sans-serif; 
+  font-family: roboto; 
+  font-size: 14px;
 }
 
 .carousel .slide {
-    background: #F8F8F8;
+  background: #F8F8F8;
+}
+
+.carousel .control-dots {
+  position: static;
 }
 
 .carousel .control-dots .dot {
@@ -18,4 +42,76 @@
 
 .carousel .control-dots .dot.selected {
    background-color: #3980BE;
+}
+
+button {
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+  border: solid #3980BE 1px;
+  background: #F8F8F8;
+  border-radius: 5%;
+  padding: 8px;
+}
+
+.carousel-container {
+  position: relative;
+  height: 95vh;
+  padding-top: 40px; 
+}
+
+.carousel-container button:focus {
+  background-color: #3980BE;
+  color: white;
+}
+
+.button-container {
+  bottom: 30px;
+  position: absolute;
+  width: 100%;
+}
+
+img.country {
+  padding: auto;
+  margin-top: 21px;
+}
+
+.agreement {
+  font-size: 10px;
+  margin: 35px 0;
+}
+
+.MuiInputLabel-formControl {
+  font-size: 10px !important;
+}
+
+.MuiFormControl-root {
+  width: 100%
+}
+
+.sign-up .MuiInputAdornment-root {
+  height: inherit;
+  display: inline-block;
+  max-height: none;
+  align-items: inherit; 
+  white-space: inherit;
+  width: 20%;
+  border-bottom: 1px solid #999a99;
+  margin: -1px;
+}
+
+.password-input {
+  width: 80%;
+}
+
+.country-code-container {
+  width: 35%;
+  display: inline-block;
+}
+
+.plus-one-span {
+  margin: 5px;
+}
+.phone-nubmer-input {
+  width: 65%;
 }
